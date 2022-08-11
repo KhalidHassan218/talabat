@@ -1,0 +1,188 @@
+:root{
+--main-color:#ff5a00;
+
+}
+*{
+
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+
+
+
+body{
+  font-family: 'Montserrat',sans-serif;
+
+}
+ul {
+  list-style: none;
+
+}
+.container{
+padding-left: 15px;
+padding-right: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+@media (min-width:1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+header{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--main-color);
+}
+header .container{
+  min-height: 69.2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .container .head{
+display: flex;
+justify-content: space-evenly;
+flex-basis: 55%;
+
+
+}
+header .container h1{
+color: white;
+font-weight: bolder;
+
+}
+header .container .head li i{
+  color: rgb(160, 88 ,228);
+}
+header .container .head li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transition: 0.1s linear;
+}
+header .container .head li a:hover{
+  border-bottom: 3px solid white;
+}
+.landing{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.landing .left{
+padding: 15px;
+flex: 50%;
+position: relative;
+
+
+}
+.landing .left .blue .line{
+  width: 678px;
+
+}
+.landing .left .blue{
+  position: absolute;
+  left:0;
+  z-index: 1;
+  top: -395px;
+  width: 572px;
+  height: 518px;
+  overflow: hidden;
+}
+.landing .left h1{
+  position: absolute;
+  color: white;
+  font-size: 108px;
+  top: -110px;
+  left: 117px;
+  z-index: 2;
+
+}
+.landing .left .moto{
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  bottom: -380px;
+  width: 572px;
+  height: 518px;
+  overflow: hidden;
+}
+.landing .right{
+padding: 20px;
+flex: 28%;
+
+
+}
+.landing .right{
+  padding: 20px;
+  flex: 28%;
+}
+.landing .right h1{
+  color: white;
+  font-size: 80px;
+  text-shadow: -1px 1px 0px black;
+  width: 402px;
+}
+.landing .right h1 span{
+color: #0e4af8;
+font-size: 80px;
+text-shadow: -1px 1px 0px black;
+width: 402px;
+
+}
+.landing .right a{
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 10px 40px;
+  margin-top: 50px;
+  font-size: 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s;
+
+
+
+
+}
+.landing .right a:hover{
+background-color: white;
+color: #0e4af8;
+
+}
+.bottom{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+
+}
+.bottom .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.bottom .container img{
+  margin-left: 10px;
+  width: 150px;
+  cursor: pointer;
+  z-index: 1;
+}
